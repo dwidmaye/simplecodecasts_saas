@@ -11,6 +11,8 @@ group :production do
     gem 'rails_12factor'
 end
 
+#Use haml for views
+gem "haml-rails", "~> 0.9"
 # Use bootstrap library for styles
 gem 'bootstrap-sass', '~> 3.3.4'
 # Use SCSS for stylesheets
