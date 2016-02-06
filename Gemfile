@@ -11,12 +11,18 @@ group :production do
     gem 'rails_12factor'
 end
 
-#Use haml for views
+# Use haml for views
 gem "haml-rails", "~> 0.9"
+
 # Use bootstrap library for styles
 gem 'bootstrap-sass', '~> 3.3.4'
+
+# Use font awesome
+gem 'font-awesome-sass', '4.5.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views

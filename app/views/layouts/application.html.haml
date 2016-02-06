@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title SimplecodecastsSaas
+    %title Dev Match
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -15,7 +15,10 @@
           %span{class: 'icon-bar'}
           %span{class: 'icon-bar'}
           %span{class: 'icon-bar'}
-        = link_to 'Sass', root_path, class: 'navbar-brand'
+        
+        = link_to root_path, class: 'navbar-brand' do
+          %i.fa.fa-users.navbar-brand
+            Dev Match
       %div.collapse.navbar-collapse{ id: 'main-nav-collapse' }
         %ul.nav.navbar-nav.navbar-right
           %li
