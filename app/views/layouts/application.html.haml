@@ -17,13 +17,15 @@
             %span{class: 'icon-bar'}
           
         = link_to root_path, class: 'navbar-brand' do
-          %i.fa.fa-users.navbar-brand
+          %i.fa.fa-users.navbar-brand.pull-left
             Dev Match
         %div.collapse.navbar-collapse{ id: 'main-nav-collapse' }
-          %ul.nav.navbar-nav.navbar-right
+          %ul.nav.navbar-nav.navbar-right.pull-right
             %li
               = link_to 'About', about_path
             %li
               = link_to 'Contact Us', new_contact_path
-    %div.container        
+    %div.container
+      - flash.each do |key, value|
+        = content_tag :div, value, class: "alert alert-#{key}", role: "alert"
       = yield
