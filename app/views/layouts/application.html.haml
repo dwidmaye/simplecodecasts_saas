@@ -20,6 +20,12 @@
           %i.fa.fa-users.navbar-brand.pull-left.no-padding-top
           Dev Match
         %div.collapse.navbar-collapse{ id: 'main-nav-collapse' }
+          %div.nav.navbar-nav.navbar-right.pull-right
+            - if current_user
+              button_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn'
+            - else
+              = link_to 'Log In', new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get
+              = link_to 'Sign Up', new_user_registration_path, class: 'btn btn-success navbar-btn', method: :get
           %ul.nav.navbar-nav.navbar-right.pull-right
             %li
               = link_to 'About', about_path
