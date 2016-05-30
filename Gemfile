@@ -33,6 +33,12 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use Devise for user authentication
 gem 'devise', '~> 3.5', '>= 3.5.6'
 
+# Use Stripe for payments
+gem 'stripe', ' ~> 1.43.0'
+
+# Use figaro to hide secret keys
+gem 'figaro', '~> 1.1.1'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -40,7 +46,7 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
